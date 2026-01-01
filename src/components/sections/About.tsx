@@ -1,5 +1,5 @@
 // components/sections/About.tsx
-import { motion } from "framer-motion";
+import  { motion } from "framer-motion";
 import SectionTitle from "../ui/SectionTitle";
 
 export default function About() {

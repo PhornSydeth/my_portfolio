@@ -1,5 +1,4 @@
 // components/sections/Project.tsx
-import { motion } from "framer-motion";
 import Card from "../ui/Card";
 import SectionTitle from "../ui/SectionTitle";
 import Button from "../ui/Button";
