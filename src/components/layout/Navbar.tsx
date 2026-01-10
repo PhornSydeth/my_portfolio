@@ -1,8 +1,8 @@
-// components/layout/Navbar.tsx
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Gradient from "../ui/Gradient";
-
+import { useTheme } from "./ThemeProvider";
+import { CiLight } from "react-icons/ci";
+import { MdDarkMode } from "react-icons/md";
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
@@ -12,22 +12,8 @@ const navItems = [
 ];
 
 export default function Navbar() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const {theme,toggleTheme}=useTheme()
 
-  // Apply the theme globally
-  useEffect(() => {
-    const stored = localStorage.getItem("theme") as "light" | "dark" | null;
-    const initialTheme = stored ?? "light";
-    setTheme(initialTheme);
-    document.documentElement.classList.toggle("dark", initialTheme === "dark");
-  }, []);
-
-  const toggleTheme = () => {
-    const next = theme === "light" ? "dark" : "light";
-    setTheme(next);
-    document.documentElement.classList.toggle("dark", next === "dark");
-    localStorage.setItem("theme", next);
-  };
 
   return (
     <motion.header
@@ -68,6 +54,7 @@ export default function Navbar() {
           >
           
           </motion.span>
+          <span className="text-3xl">{theme==='light'? (<CiLight/>):(<MdDarkMode/>) }</span>
         </button>
       </nav>
     </motion.header>

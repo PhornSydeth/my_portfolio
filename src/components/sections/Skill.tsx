@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Card from "../ui/Card";
 import SectionTitle from "../ui/SectionTitle";
+import { useTheme } from "../layout/ThemeProvider";
 
 const skills = [
   "React",
@@ -13,8 +14,14 @@ const skills = [
 ];
 
 export default function Skill() {
+    const {theme}=useTheme()
+    const componentStyle={
+        backgroundColor:theme==='dark' ?'#333' :'#fff',
+        color:theme==='dark'?'#fff':'#000',
+        padding:'20px'
+    }
   return (
-    <section id="skills" className="py-24 bg-gray-50 dark:bg-gray-900">
+    <section id="skills" style={componentStyle}>
       <div className="mx-auto max-w-6xl px-6">
         <SectionTitle title="Skills" />
 

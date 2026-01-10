@@ -1,33 +1,30 @@
-// components/sections/Project.tsx
-import Card from "../ui/Card";
-import SectionTitle from "../ui/SectionTitle";
-import Button from "../ui/Button";
+// src/section/Project.tsx
 
-export default function Project() {
+import React from 'react';
+import { projects } from '../data/Project'; // Adjust import path as necessary
+import ProjectCard from '../data/ProjectCard'; // Adjust import path as necessary
+import { useTheme } from '../layout/ThemeProvider';
+const ProjectSection: React.FC = () => {
+  const {theme}=useTheme()
+  const componentStyle={
+      backgroundColor:theme==='dark' ?'#333' :'#fff',
+      color:theme==='dark'?'#fff':'#000',
+      padding:'20px'
+  }
   return (
-    <section id="projects" className="py-24">
-      <div className="mx-auto max-w-6xl px-6">
-        <SectionTitle title="Projects" subtitle="Things I’ve built" />
-
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {[1, 2, 3].map((item) => (
-            <Card key={item}>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                Project Title
-              </h3>
-              <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                Short description of the project highlighting tech stack and
-                purpose.
-              </p>
-
-              <div className="mt-4 flex gap-3">
-                <Button variant="secondary">GitHub</Button>
-                <Button variant="ghost">Live</Button>
-              </div>
-            </Card>
+    <section style={componentStyle}>
+      <div className="container mx-auto px-4">
+        <h1 className="text-4xl font-extrabold text-center mb-10 text-gray-900 ">
+          My Projects
+        </h1>
+        <div className="max-w-4xl mx-auto" >
+          {projects.map((project) => (
+            <ProjectCard  key={project.id} project={project} />
           ))}
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default ProjectSection;

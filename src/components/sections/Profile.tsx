@@ -9,7 +9,7 @@ const profiles = [profile1, profile2, profile3];
 
 export default function Profile() {
   return (
-    <section id="profile" className="py-24 bg-gray-50 dark:bg-gray-900">
+    <section id="profile" className="py-24 dark:text-gray-100 dark:bg-gray-900">
       <div className="mx-auto max-w-6xl px-6">
         <SectionTitle title="Who I Am" subtitle="A quick glimpse of me" />
 

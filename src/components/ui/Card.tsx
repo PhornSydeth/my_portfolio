@@ -14,7 +14,7 @@ export default function Card({ children, className = "" }: CardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md ${className}`}
+      className={`rounded-xl border border-gray-200 bg-whit p-6 shadow-sm hover:shadow-md ${className}`}
     >
       {children}
     </motion.div>
