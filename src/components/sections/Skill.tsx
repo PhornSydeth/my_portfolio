@@ -1,18 +1,18 @@
 // components/sections/Skill.tsx
 import { useState } from "react";
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion} from "framer-motion";
 import SectionTitle from "../ui/SectionTitle";
 
 // ─── React Icons ──────────────────────────────────────────────────────────────
 import {
-  SiReact, SiTypescript, SiTailwindcss, SiNextdotjs, SiHtml5,
+  SiReact, SiTypescript, SiTailwindcss, SiHtml5,
 } from "react-icons/si";
 import {
   SiSpring, SiJavascript, SiPostgresql, SiMysql, SiMongodb,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import {
-  SiDocker, SiGit, SiPostman, SiGithub, SiFigma,
+  SiDocker, SiGit, SiPostman, SiGithub,
 } from "react-icons/si";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -98,7 +98,6 @@ function SkillBar({
 function SkillCard({
   skill,
   index,
-  gradientFrom,
 }: {
   skill: (typeof categories)[0]["skills"][0];
   index: number;
