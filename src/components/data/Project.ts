@@ -47,20 +47,5 @@ export const projects: ProjectData[] = [
     githubLink: "https://github.com/PhornSydeth",
     gradient: "from-purple-500 to-pink-500",
     accentColor: "#a78bfa",
-  },
-  {
-    id: 3,
-    title: "Developer Portfolio",
-    shortDesc: "A modern, animated personal portfolio built with React, TypeScript & Tailwind CSS.",
-    description:
-      "This very portfolio — a fully responsive, dark-mode-enabled personal portfolio site built with React 19, TypeScript, Tailwind CSS v4 and Framer Motion. Features smooth section animations, a theme toggle, contact form powered by EmailJS, and a clean glassmorphism design system.",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "EmailJS"],
-    category: "frontend",
-    status: "in-progress",
-    featured: false,
-    githubLink: "https://github.com/PhornSydeth",
-    demoLink: "https://sydethportfolio.netlify.app",
-    gradient: "from-orange-400 to-amber-400",
-    accentColor: "#fb923c",
-  },
+  }
 ];

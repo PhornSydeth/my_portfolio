@@ -17,9 +17,9 @@ const experiences = [
   {
     id: 1,
     type: "education",
-    role: "Bachelor's Degree — Management Information Systems",
+    role: "Bachelor's Degree — Computer Science",
     org: "University of Management and Economics (UME)",
-    location: "Phnom Penh, Cambodia",
+    location: "Krong Kracheh, Cambodia",
     period: "2022 – Present",
     current: true,
     gradient: "from-blue-500 to-cyan-400",
@@ -323,9 +323,9 @@ export default function Experience() {
           className="mt-4 mb-16 flex justify-center gap-10"
         >
           {[
-            { label: "Years Learning", value: "3+" },
-            { label: "Projects Built", value: "5+" },
-            { label: "Technologies", value: "15+" },
+            { label: "Years Learning", value: "4+" },
+            { label: "Projects Built", value: "2+" },
+            { label: "Technologies", value: "8+" },
           ].map((s) => (
             <div key={s.label} className="text-center">
               <p className="text-3xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">

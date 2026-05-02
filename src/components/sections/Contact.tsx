@@ -14,8 +14,8 @@ const socialLinks = [
   {
     id: "telegram",
     label: "Telegram",
-    handle: "@your_telegram",               // ← replace
-    href: "https://t.me/your_telegram",     // ← replace
+    handle: "@Phorn_Sydeth",               // ← replace
+    href: "https://t.me/Phorn_Sydeth",     // ← replace
     icon: FaTelegram,
     gradient: "from-[#229ED9] to-[#1A7BB5]",
     glow: "rgba(34,158,217,0.35)",
@@ -24,8 +24,8 @@ const socialLinks = [
   {
     id: "messenger",
     label: "Facebook Messenger",
-    handle: "your.facebook",                          // ← replace
-    href: "https://m.me/your.facebook",              // ← replace
+    handle: "PhornSydeth.facebook",                          // ← replace
+    href: "https://www.facebook.com/share/1H6cWWpkwr/",              // ← replace
     icon: FaFacebookMessenger,
     gradient: "from-[#0099FF] to-[#A033FF]",
     glow: "rgba(0,153,255,0.35)",
@@ -34,8 +34,8 @@ const socialLinks = [
   {
     id: "whatsapp",
     label: "WhatsApp",
-    handle: "+855 XX XXX XXX",                             // ← replace
-    href: "https://wa.me/855xxxxxxxxx",                   // ← replace
+    handle: "+855 979060729",                             // ← replace
+    href: "https://wa.me/855979060729",                   // ← replace
     icon: FaWhatsapp,
     gradient: "from-[#25D366] to-[#128C7E]",
     glow: "rgba(37,211,102,0.35)",
@@ -44,8 +44,8 @@ const socialLinks = [
   {
     id: "instagram",
     label: "Instagram",
-    handle: "@your_instagram",                         // ← replace
-    href: "https://instagram.com/your_instagram",     // ← replace
+    handle: "@sydeth_instagram",                         // ← replace
+    href: "https://www.instagram.com/sydeth_ph?igsh=MmwzZTdzbTMzcjIw",     // ← replace
     icon: FaInstagram,
     gradient: "from-[#F58529] via-[#DD2A7B] to-[#8134AF]",
     glow: "rgba(221,42,123,0.35)",
@@ -55,8 +55,8 @@ const socialLinks = [
 
 // ─── Quick contact chips ──────────────────────────────────────────────────────
 const quickInfo = [
-  { icon: FiMapPin, label: "Location",  value: "Phnom Penh, Cambodia", color: "#a78bfa" },
-  { icon: FiMail,   label: "Email",     value: "sydethphorn@gmail.com", color: "#60a5fa", href: "mailto:sydethphorn@gmail.com" },
+  { icon: FiMapPin, label: "Location",  value: "Krong Kracheh, Cambodia", color: "#a78bfa" },
+  { icon: FiMail,   label: "Email",     value: "phornsydeth6@gmail.com", color: "#60a5fa", href: "mailto:phornsydeth6@gmail.com" },
 ];
 
 // ─── Platform card ────────────────────────────────────────────────────────────
@@ -250,7 +250,7 @@ export default function Contact() {
           <div className="flex gap-3">
             {[
               { href: "https://github.com/PhornSydeth", icon: SiGithub, label: "GitHub",   color: "#6b7280" },
-              { href: "https://linkedin.com/",          icon: SiLinkedin, label: "LinkedIn", color: "#60a5fa" },
+              { href: "https://www.linkedin.com/in/phorn-sydeth-6b9861349/",          icon: SiLinkedin, label: "LinkedIn", color: "#60a5fa" },
             ].map(({ href, icon: Icon, label, color }) => (
               <motion.a
                 key={label}

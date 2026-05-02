@@ -22,8 +22,8 @@ const socials = [
   { label: "GitHub",    href: "https://github.com/PhornSydeth/",              icon: SiGithub,    color: "#6b7280" },
   { label: "LinkedIn",  href: "https://linkedin.com/",                         icon: SiLinkedin,  color: "#60a5fa" },
   { label: "Facebook",  href: "https://www.facebook.com/share/16oSTDZZWe/",   icon: FaFacebook,  color: "#3b82f6" },
-  { label: "Telegram",  href: "https://t.me/your_telegram",                   icon: FaTelegram,  color: "#229ED9" },
-  { label: "Instagram", href: "https://instagram.com/your_instagram",         icon: FaInstagram, color: "#DD2A7B" },
+  { label: "Telegram",  href: "https://t.me/Phorn_Sydeth",                   icon: FaTelegram,  color: "#229ED9" },
+  { label: "Instagram", href: "https://www.instagram.com/sydeth_ph?igsh=MmwzZTdzbTMzcjIw",         icon: FaInstagram, color: "#DD2A7B" },
 ];
 
 const contactDetails = [
@@ -186,7 +186,7 @@ export default function Footer() {
             <span className="font-semibold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
               Phorn Sydeth
             </span>
-            . All rights reserved. Built with React & ❤️
+            . All rights reserved.
           </p>
 
           {/* Back to top */}

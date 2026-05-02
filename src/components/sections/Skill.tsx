@@ -5,7 +5,7 @@ import SectionTitle from "../ui/SectionTitle";
 
 // ─── React Icons ──────────────────────────────────────────────────────────────
 import {
-  SiReact, SiTypescript, SiTailwindcss, SiNextdotjs, SiHtml5, SiCss3,
+  SiReact, SiTypescript, SiTailwindcss, SiNextdotjs, SiHtml5,
 } from "react-icons/si";
 import {
   SiSpring, SiJavascript, SiPostgresql, SiMysql, SiMongodb,
@@ -25,7 +25,6 @@ const categories = [
     skills: [
       { name: "React.js",      Icon: SiReact,       level: 90, color: "#61DAFB" },
       { name: "TypeScript",    Icon: SiTypescript,  level: 82, color: "#3178C6" },
-      { name: "Next.js",       Icon: SiNextdotjs,   level: 75, color: "#fff"    },
       { name: "Tailwind CSS",  Icon: SiTailwindcss, level: 88, color: "#38BDF8" },
       { name: "JavaScript",    Icon: SiJavascript,  level: 85, color: "#F7DF1E" },
       { name: "HTML / CSS",    Icon: SiHtml5,       level: 92, color: "#E34F26" },
@@ -55,7 +54,6 @@ const categories = [
       { name: "GitHub",        Icon: SiGithub,      level: 90, color: "#fff"    },
       { name: "Docker",        Icon: SiDocker,      level: 70, color: "#2496ED" },
       { name: "Postman",       Icon: SiPostman,     level: 85, color: "#FF6C37" },
-      { name: "Figma",         Icon: SiFigma,       level: 72, color: "#F24E1E" },
     ],
   },
 ];
@@ -244,9 +242,9 @@ export default function Skill() {
           className="mt-4 flex justify-center gap-10 mb-12"
         >
           {[
-            { label: "Technologies", value: "15+" },
-            { label: "Years Coding", value: "3+" },
-            { label: "Projects Built", value: "20+" },
+            { label: "Technologies", value: "8+" },
+            { label: "Years Coding", value: "2+" },
+            { label: "Projects Built", value: "2+" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <p

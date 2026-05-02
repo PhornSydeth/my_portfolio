@@ -222,7 +222,7 @@ export default function Profile() {
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.1 }}
             className="flex-1 w-full"
           >
             {/* Hero photo */}
@@ -241,14 +241,14 @@ export default function Profile() {
                   transition={{ duration: 0.6 }}
                   src={galleryImages[imgActive]}
                   alt={`Profile photo ${imgActive + 1}`}
-                  className="h-full w-full object-cover"
+                  className="w-full h-full object-contain"
                 />
                 {/* Bottom gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                 {/* Floating badges */}
                 <FloatingBadge
                   icon={FiMapPin}
-                  text="Phnom Penh, Cambodia"
+                  text="Krong Kracheh, Cambodia"
                   className="bottom-4 left-4"
                   delay={0.4}
                   color="#60a5fa"
@@ -277,7 +277,7 @@ export default function Profile() {
                       : "opacity-60 hover:opacity-90"
                   }`}
                 >
-                  <img src={src} alt={`thumb ${i}`} className="h-full w-full object-cover" />
+                  <img src={src} alt={`thumb ${i}`} className="h-full w-full object-contain" />
                 </motion.button>
               ))}
             </div>
@@ -332,7 +332,7 @@ export default function Profile() {
 
             {/* Info chips */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <InfoChip icon={FiMapPin} label="Location" value="Phnom Penh, Cambodia" color="#60a5fa" delay={0.35} />
+              <InfoChip icon={FiMapPin} label="Location" value="Krong Kracheh, Cambodia" color="#60a5fa" delay={0.35} />
               <InfoChip icon={FiMail} label="Email" value="sydethphorn@gmail.com" color="#a78bfa" delay={0.4} />
               <InfoChip icon={FiCode} label="Role" value="Full Stack Developer" color="#34d399" delay={0.45} />
               <InfoChip icon={FiCoffee} label="Fuel" value="Coffee & Clean Code" color="#fb923c" delay={0.5} />
@@ -382,13 +382,13 @@ export default function Profile() {
               className="flex flex-wrap gap-3 pt-2"
             >
               <SocialBtn
-                href="https://github.com/"
+                href="https://github.com/PhornSydeth"
                 icon={SiGithub}
                 label="GitHub"
                 gradient="from-gray-700 to-gray-900 dark:from-gray-600 dark:to-gray-800"
               />
               <SocialBtn
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/in/phorn-sydeth-6b9861349/"
                 icon={SiLinkedin}
                 label="LinkedIn"
                 gradient="from-blue-600 to-blue-800"

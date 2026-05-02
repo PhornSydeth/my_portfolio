@@ -49,8 +49,8 @@ export default function Hero() {
             transition={{ delay: 0.4 }}
             className="mt-10 flex justify-center md:justify-start gap-4"
           >
-            <Button>View Projects</Button>
-            <Button variant="ghost">Contact Me</Button>
+            <Button><a href="#projects">View Project</a></Button>
+            <Button variant="ghost"><a href="#contact">Contact Me</a></Button>
           </motion.div>
         </div>
 
